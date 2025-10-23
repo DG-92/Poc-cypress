@@ -1,0 +1,17 @@
+{
+  "name": "dog-api-tests",
+  "version": "1.0.0",
+  "description": "Testes automatizados de API para a Dog API usando Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "open": "cypress open"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "cypress": "^13.17.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.3.0"
+  }
+}

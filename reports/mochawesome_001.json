@@ -1,0 +1,152 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-10-23T22:25:06.195Z",
+    "end": "2025-10-23T22:25:22.318Z",
+    "duration": 16123,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bff29c09-b407-4edf-9c59-ad2bc823fe26",
+      "title": "",
+      "fullFile": "cypress\\e2e\\front\\busca.cy.js",
+      "file": "cypress\\e2e\\front\\busca.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0900e67f-7fe1-4fdc-8735-a3c0b46ee83f",
+          "title": "Acessar Serviços",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "000 - Verifica Título da pagina",
+              "fullTitle": "Acessar Serviços 000 - Verifica Título da pagina",
+              "timedOut": null,
+              "duration": 3056,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.validaTituloDaPagina('Agi Blog | Tudo sobre empréstimo e educação financeira');",
+              "err": {},
+              "uuid": "dc6117ac-fac0-483b-bbe6-e70c90f270a5",
+              "parentUUID": "0900e67f-7fe1-4fdc-8735-a3c0b46ee83f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "001 - Busca de notícia com sucesso",
+              "fullTitle": "Acessar Serviços 001 - Busca de notícia com sucesso",
+              "timedOut": null,
+              "duration": 1799,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.lupaDePesquisa('Nossos avanços em testes de transferências');\ncy.validaFrase('Resultados encontrados para: Nossos avanços em testes de transferências');\ncy.validaFrase('Nossos avanços em testes de transferências interbancárias via Drex. Veja mais detalhes!');",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'KeyboardEvent')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'KeyboardEvent')\n    at Keyboard.fireSimulatedEvent (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:116681:28)\n    at Keyboard.simulatedKeydown (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:116804:58)\n    at Keyboard.typeSimulatedKey (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:116842:10)\n    at <unknown> (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:116538:14)\n    at tryCatcher (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise.attempt.Promise.try (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:4338:29)\n    at <unknown> (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:116547:70)\n    at tryCatcher (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1830:23)\n    at Object.gotValue (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:6499:18)\n    at Object.gotAccum (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:6488:25)\n    at Object.tryCatcher (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1830:23)\n    at Promise._settlePromiseFromHandler (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1542:31)\n    at Promise._settlePromise (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1599:18)\n    at Promise._settlePromise0 (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1644:10)\n    at Promise._settlePromises (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1724:18)\n    at Promise._fulfill (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1668:18)\n    at Promise._resolveCallback (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1462:57)\n    at Promise._settlePromiseFromHandler (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1554:17)\n    at Promise._settlePromise (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1599:18)\n    at Promise._settlePromise0 (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1644:10)\n    at Promise._settlePromises (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1724:18)\n    at Promise._fulfill (https://blog.agibank.com.br/__cypress/runner/cypress_runner.js:1668:18)",
+                "diff": null
+              },
+              "uuid": "0e1f3577-c5c8-499b-a545-d21eb42c5b7e",
+              "parentUUID": "0900e67f-7fe1-4fdc-8735-a3c0b46ee83f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "002 - Busca de notícia sem sucesso",
+              "fullTitle": "Acessar Serviços 002 - Busca de notícia sem sucesso",
+              "timedOut": null,
+              "duration": 11101,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.lupaDePesquisa('Teste Inexistente');\ncy.validaFrase('Lamentamos, mas nada foi encontrado para sua pesquisa, tente novamente com outras palavras.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Lamentamos, mas nada foi encontrado para sua pesquisa, tente novamente com outras palavras.' but never did.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find content: 'Lamentamos, mas nada foi encontrado para sua pesquisa, tente novamente com outras palavras.' but never did.\n    at Context.eval (webpack://dog-api-tests/./cypress/support/commands.js:36:23)",
+                "diff": null
+              },
+              "uuid": "35bdbbd2-49de-44f0-9a5c-47f75aad6352",
+              "parentUUID": "0900e67f-7fe1-4fdc-8735-a3c0b46ee83f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dc6117ac-fac0-483b-bbe6-e70c90f270a5"
+          ],
+          "failures": [
+            "0e1f3577-c5c8-499b-a545-d21eb42c5b7e",
+            "35bdbbd2-49de-44f0-9a5c-47f75aad6352"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 15956,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}
